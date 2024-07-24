@@ -17,7 +17,7 @@ spec:
           - containerPort: 80
         envFrom:
           - configMapRef:
-            name: sistema-configmap
+              name: sistema-configmap
   selector:
     matchLabels:
       app: sistema-noticias
