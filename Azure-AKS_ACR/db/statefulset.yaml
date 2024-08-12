@@ -4,6 +4,9 @@ metadata:
   name: statefulset-mysql
 spec:
   serviceName: db
+  selector:
+    matchLabels:
+      name: mysql
   template:
     metadata:
       labels:

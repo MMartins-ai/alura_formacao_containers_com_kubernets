@@ -2,11 +2,16 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: aplicacao-deployment
+  labels:
+    app: alura-sports
 spec:
+  selector:
+    matchLabels:
+      app: alura-sports
   template:
     metadata:
       labels:
-       name: aplicacao-pod
+       app: alura-sports
     spec:
       containers:
         - name: container-aplicacao-loja
