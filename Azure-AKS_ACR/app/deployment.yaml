@@ -19,5 +19,5 @@ spec:
           ports:
             - containerPort: 80
       imagePullSecrets:
-        - name: alurasportsregistry.secret
+        - name: alurasportsregistrymateus.secret
 
